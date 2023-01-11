@@ -14,9 +14,12 @@
   "scripts": {
     "build": "tsc",
     "start": "probot run ./lib/index.js",
+    "watch": "nodemon --exec \"npm run start\"",
     "test": "jest"
   },
   "dependencies": {
+    "@octokit/auth-app": "^4.0.8",
+    "@octokit/core": "^4.1.0",
     "probot": "^12.2.4"
   },
   "devDependencies": {
